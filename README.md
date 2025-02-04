@@ -1,2 +1,2 @@
-# x_codeReview
-POC for the contribution in the Development of Everything App.
+# bookstore
+This repository is for classical conversatoins bookstore. A portal to sell books online
