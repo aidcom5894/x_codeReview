@@ -171,7 +171,7 @@ class Action_Model extends CI_Model
 			    echo '}, 100);';
 			    echo '</script>';
 
-			    $mailBody = "<b>Dear Admin,</b><br> A user with Email: <b>$userEmail</b> and Contact No.: <b>$userContact</b> posted a query for you. <br> The user needs assistance on the following Query, which says: <br> $query. <br><h3 style='color:#055487'>Please provide them assistance with their query ASAP.</h3><br> <b>Thanks & Regards,</b><br> Support Team <br> Classical Conversations.";
+			    $mailBody = "<b>Dear Admin,</b><br> A user with Email: <b>$userEmail</b> and Contact No.: <b>$userContact</b> posted a query for you. <br> The user needs assistance on the following Query, which says: <br> $query. <br><h3 style='color:#055487'>Please provide them assistance with their query ASAP.</h3><br> <b>Thanks & Regards,</b><br> Support Team <br> AIDCOM.";
 
 			    //Create an instance; passing `true` enables exceptions
 				$mail = new PHPMailer(true);
@@ -180,18 +180,18 @@ class Action_Model extends CI_Model
 				    //Server settings
 				    $mail->SMTPDebug = 0;                      //Enable verbose debug output
 				    $mail->isSMTP();                                            //Send using SMTP
-				    $mail->Host       = 'smtp.sendgrid.net';                     //Set the SMTP server to send through
+				    $mail->Host       = 'XXX';                     //Set the SMTP server to send through
 				    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-				    $mail->Username   = 'apikey';                     //SMTP username
-				    $mail->Password   = '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';                               //SMTP password
+				    $mail->Username   = 'XXX';                     //SMTP username
+				    $mail->Password   = 'XXX';                               //SMTP password
 				    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
 				    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 				    //Recipients
-				    $mail->setFrom('support@aadamya.in', 'CC Bookstore');
-				    $mail->addAddress('cchristian@classicalconversations.com');     //Add a recipient
-				    $mail->addAddress('developerbth@gmail.com');     			   //Add a recipient
-				    $mail->addBCC('developerbth@gmail.com');
+				    $mail->setFrom('XXX', 'CC Bookstore');
+				    $mail->addAddress('XX');     //Add a recipient
+				   			
+				  
 
 				    //Content
 				    $mail->isHTML(true);                                  //Set email format to HTML
@@ -335,19 +335,18 @@ class Action_Model extends CI_Model
 				    //Server settings
 				    $mail->SMTPDebug = 0;                      //Enable verbose debug output
 				    $mail->isSMTP();                                            //Send using SMTP
-				    $mail->Host       = 'smtp.sendgrid.net';                     //Set the SMTP server to send through
+				    $mail->Host       = 'XXXX';                     //Set the SMTP server to send through
 				    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-				    $mail->Username   = 'apikey';                     //SMTP username
-				    $mail->Password   = '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';                               //SMTP password
+				    $mail->Username   = 'XXXX';                     //SMTP username
+				    $mail->Password   = 'XXXX';                               //SMTP password
 				    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
 				    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 				    //Recipients
-				    $mail->setFrom('support@aadamya.in', 'CC Bookstore');
-				    $mail->addAddress('cchristian@classicalconversations.com');     //Add a recipient
-				    // $mail->addAddress('robinkujur@aidcom.in');     //Add a recipient
+				    $mail->setFrom('XX', 'CC Bookstore');
+				  
 				    $mail->addAddress($parentsEmail);     //Add a recipient
-				    $mail->addBCC('developerbth@gmail.com');
+				  
 
 				     $mail->addAttachment($completeInvoiceAddress);   
 
@@ -440,19 +439,18 @@ class Action_Model extends CI_Model
 				    //Server settings
 				    $mail->SMTPDebug = 0;                      //Enable verbose debug output
 				    $mail->isSMTP();                                            //Send using SMTP
-				    $mail->Host       = 'smtp.sendgrid.net';                     //Set the SMTP server to send through
+				    $mail->Host       = 'XXX';                     //Set the SMTP server to send through
 				    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-				    $mail->Username   = 'apikey';                     //SMTP username
-				    $mail->Password   = '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';                               //SMTP password
+				    $mail->Username   = 'XXXX';                     //SMTP username
+				    $mail->Password   = 'XXX';                               //SMTP password
 				    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
 				    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 				    //Recipients
-				    $mail->setFrom('support@aadamya.in', 'CC Bookstore');
-				    // $mail->addAddress('cchristian@classicalconversations.com');     //Add a recipient
-				    // $mail->addAddress('robinkujur@aidcom.in');     //Add a recipient
+				    $mail->setFrom('XXXX', 'CC Bookstore');
+				  
 				    $mail->addAddress($userEmail);     //Add a recipient
-				    $mail->addBCC('developerbth@gmail.com');
+				    $mail->addBCC('XXX');
 
 				     
 				    //Content
